@@ -1,0 +1,132 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.App {
+  width: 720px;
+}
+
+.header {
+  margin-top: 3rem;
+  border-radius: 10px 10px 0 0;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.header > .header--logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.header > .header--logo__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+main {
+  padding: 4rem 2rem;
+  background-color: #fafaf8;
+}
+
+.add-ingredient-form {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 12px;
+  height: 38px;
+}
+
+.add-ingredient-form > input {
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  padding: 9px 13px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.add-ingredient-form > button {
+  border-radius: 6px;
+  border: none;
+  background-color: #141414;
+  color: #fafaf8;
+  width: 150px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.add-ingredient-form > button::before {
+  content: "+";
+  margin-right: 5px;
+}
+
+/* Ingredients */
+.ingredients {
+  margin-top: 2rem;
+  padding: 0 2.5rem;
+}
+
+.ingredients > .ingredients--heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ingredients > .ingredients--list {
+  padding-left: 1.5rem;
+}
+
+.ingredients > .ingredients--list > .ingredients--list__item {
+  line-height: 2.8rem;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ingredients > .get-recipe {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0efeb;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+}
+
+.ingredients > .get-recipe .get-recipe--heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.ingredients > .get-recipe p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.ingredients > .get-recipe > button {
+  height: 38px;
+  width: 115px;
+  border-radius: 6px;
+  border: none;
+  background-color: #d17557;
+  color: #fafaf8;
+  font-weight: 500;
+  line-height: 20px;
+}
