@@ -17,7 +17,12 @@ const IngredientsList = (props) => {
             <h3 className="get-recipe--heading">Ready for a recipe</h3>
             <p>Generate a recipe from your list of ingredients.</p>
           </div>
-          <button className="get-recipe--button">Get a recipe</button>
+          <button
+            onClick={props.toggleShowRecipe}
+            className="get-recipe--button"
+          >
+            Get a recipe
+          </button>
         </section>
       )}
     </section>

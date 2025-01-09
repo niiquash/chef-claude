@@ -130,3 +130,9 @@ main {
   font-weight: 500;
   line-height: 20px;
 }
+
+/* Recipe */
+.recipe-container {
+  margin-top: 3rem;
+  padding: 0 2.5rem;
+}

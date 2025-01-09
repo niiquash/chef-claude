@@ -1,12 +1,18 @@
 import React from "react";
 import IngredientsList from "./IngredientsList";
+import Recipe from "./Recipe";
 
 const Main = () => {
   const [ingredients, setIngredients] = React.useState([]);
+  const [showRecipe, setShowRecipe] = React.useState(false);
 
   const addIngredient = (formData) => {
     const newIngredient = formData.get("ingredient");
     setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
+  };
+
+  const toggleShowRecipe = () => {
+    setShowRecipe((prev) => !prev);
   };
 
   return (
@@ -20,7 +26,13 @@ const Main = () => {
         />
         <button>Add Ingredient</button>
       </form>
-      {<IngredientsList ingredients={ingredients} />}
+      {
+        <IngredientsList
+          toggleShowRecipe={toggleShowRecipe}
+          ingredients={ingredients}
+        />
+      }
+      {showRecipe && <Recipe />}
     </main>
   );
 };
